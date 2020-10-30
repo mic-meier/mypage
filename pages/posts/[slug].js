@@ -1,6 +1,9 @@
+/** @jsxRuntime classic */
+/** @jsx jsx */
 import matter from 'gray-matter'
 import hydrate from 'next-mdx-remote/hydrate'
 import renderToString from 'next-mdx-remote/render-to-string'
+import { Container, jsx } from 'theme-ui'
 
 import { getPostData } from '../../lib/getPostsData'
 import { getAllPostSlugs } from '../../lib/getPostsData'
@@ -11,10 +14,10 @@ export default function BlogPost({ source, frontMatter }) {
   const content = hydrate(source, { components })
 
   return (
-    <div>
+    <Container mt={6} sx={{ maxWidth: '50rem' }}>
       <h1>{frontMatter.title}</h1>
       <div>{content}</div>
-    </div>
+    </Container>
   )
 }
 
