@@ -8,14 +8,14 @@ const theme = {
     ...tailwindTheme.styles,
     CodeBlock: {
       overflow: `auto`,
-      mx: '-30px',
+      mx: '-24px',
       pre: {
         backgroundColor: `transparent`,
         float: `left`,
         minWidth: `100%`,
         margin: 0,
-        px: '30px',
-        py: '11px',
+        px: '24px',
+        py: '12px',
         borderRadius: '10px',
       },
       highlightLine: {
