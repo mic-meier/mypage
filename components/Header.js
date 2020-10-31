@@ -1,35 +1,41 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import Link from 'next/link'
-import { jsx } from 'theme-ui'
+import { Container, jsx } from 'theme-ui'
 
 export default function Header() {
   return (
     <header
       sx={{
-        display: 'flex',
-        alignItems: 'center',
-        variant: 'styles.header',
+        variant: 'header',
       }}
     >
-      <div sx={{ mx: 'auto' }} />
-      <Link
-        href="/"
+      <Container
         sx={{
-          variant: 'styles.navtitle',
+          display: 'flex',
+          alignItems: 'flex-end',
+          variant: 'header',
+          maxWidth: '3xl',
+          px: 5,
         }}
       >
-        Hello
-      </Link>
-      <div sx={{ mx: 'auto' }} />
-      <Link
-        href="/blog"
-        sx={{
-          variant: 'stles.navlink',
-        }}
-      >
-        Blog
-      </Link>
+        <Link href="/">
+          <a
+            sx={{
+              variant: 'links.navtitle',
+            }}
+          >
+            El Mayo
+          </a>
+        </Link>
+        <div sx={{ mx: 'auto' }} />
+        <Link href="/blog">
+          <a sx={{ variant: 'links.navlink' }}>Blog</a>
+        </Link>
+        <Link href="/blog">
+          <a sx={{ variant: 'links.navlink' }}>Blog</a>
+        </Link>
+      </Container>
     </header>
   )
 }

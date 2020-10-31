@@ -15,7 +15,7 @@ export default function Layout({ children, title }) {
         <title>{title}</title>
       </Head>
       <Header />
-      <Container sx={{ maxWidth: '2xl', px: 5 }}>{children}</Container>
+      <Container sx={{ maxWidth: '3xl', px: 5 }}>{children}</Container>
     </React.Fragment>
   )
 }

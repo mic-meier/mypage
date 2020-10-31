@@ -1,7 +1,6 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
-import { Container } from 'theme-ui'
 
 import Layout from '../components/Layout'
 
