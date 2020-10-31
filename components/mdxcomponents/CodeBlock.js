@@ -5,7 +5,7 @@ import nightOwl from 'prism-react-renderer/themes/nightOwl'
 import React from 'react'
 import { jsx, Styled } from 'theme-ui'
 
-import { getShouldHighlightLine } from '../lib/getShouldHighlightLine'
+import { getShouldHighlightLine } from '../../lib/getShouldHighlightLine'
 
 const CodeBlock = ({
   children,

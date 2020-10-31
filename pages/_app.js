@@ -1,14 +1,10 @@
-import { MDXProvider } from '@mdx-js/react'
+import { MDXContext, MDXProvider } from '@mdx-js/react'
 import { ThemeProvider } from 'theme-ui'
 
-import CodeBlock from '../components/CodeBlock'
+import { components } from '../components/mdxcomponents/index'
 import theme from '../theme'
 
-const components = {
-  // eslint-disable-next-line react/display-name
-  pre: (props) => <div {...props} />,
-  code: CodeBlock,
-}
+MDXContext.displayName = 'MDXReactContext'
 
 function MyApp({ Component, pageProps }) {
   return (
