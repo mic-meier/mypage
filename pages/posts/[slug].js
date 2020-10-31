@@ -3,7 +3,7 @@
 import matter from 'gray-matter'
 import hydrate from 'next-mdx-remote/hydrate'
 import renderToString from 'next-mdx-remote/render-to-string'
-import { Container, jsx } from 'theme-ui'
+import { jsx } from 'theme-ui'
 
 import Layout from '../../components/Layout'
 import { getPostData } from '../../lib/getPostsData'

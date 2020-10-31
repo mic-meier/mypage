@@ -4,6 +4,8 @@ import Head from 'next/head'
 import React from 'react'
 import { Container, jsx } from 'theme-ui'
 
+import Header from './Header'
+
 export default function Layout({ children, title }) {
   return (
     <React.Fragment>
@@ -12,6 +14,7 @@ export default function Layout({ children, title }) {
         <meta charSet="utf8" />
         <title>{title}</title>
       </Head>
+      <Header />
       <Container sx={{ maxWidth: '2xl', px: 5 }}>{children}</Container>
     </React.Fragment>
   )

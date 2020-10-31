@@ -3,9 +3,11 @@
 import { jsx } from 'theme-ui'
 import { Container } from 'theme-ui'
 
+import Layout from '../components/Layout'
+
 export default function Home() {
   return (
-    <Container sx={{ p: 8, maxWidth: '4xl' }}>
+    <Layout title="Welcome to my humble abode">
       <div>
         <h3
           sx={{
@@ -37,6 +39,6 @@ export default function Home() {
           perspiciatis porro architecto omnis.
         </p>
       </div>
-    </Container>
+    </Layout>
   )
 }
