@@ -72,7 +72,9 @@ export default {
   inlineCode: {
     fontFamily: 'monospace',
     color: 'secondary',
-    bg: 'purple.2',
+    bg: 'green.1',
+    p: 1,
+    borderRadius: 4,
   },
   pre: {
     variant: 'prism',
