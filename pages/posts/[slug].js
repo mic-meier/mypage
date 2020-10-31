@@ -14,7 +14,7 @@ export default function BlogPost({ source, frontMatter }) {
   const content = hydrate(source, { components })
 
   return (
-    <Container mt={6} sx={{ maxWidth: '4xl' }}>
+    <Container sx={{ maxWidth: '2xl', px: 5 }}>
       <h1>{frontMatter.title}</h1>
       <div>{content}</div>
     </Container>
