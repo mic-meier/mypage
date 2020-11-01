@@ -15,12 +15,12 @@ export default {
     title: {
       variant: 'nav.base',
       fontWeight: 'heading',
-      fontSize: 5,
+      fontSize: 4,
     },
     link: {
       variant: 'nav.base',
       fontWeight: 'bold',
-      fontSize: 5,
+      fontSize: 4,
     },
   },
   header: {
