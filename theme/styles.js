@@ -88,10 +88,11 @@ export default {
   },
   inlineCode: {
     fontFamily: 'monospace',
-    color: 'secondary',
+    color: 'text',
     bg: 'green.1',
-    p: 1,
+    px: 1,
     borderRadius: 4,
+    fontSize: 1,
   },
   pre: {
     variant: 'prism',
@@ -113,6 +114,9 @@ export default {
   CodeBlock: {
     overflow: `auto`,
     mx: -5,
+    mb: 5,
+    boxShadow: '0 10px 20px rgba(0,0,0,.15), 0 3px 6px rgba(0,0,0,.10)',
+    borderRadius: 'md',
     pre: {
       backgroundColor: `transparent`,
       float: `left`,
@@ -142,7 +146,8 @@ export default {
       color: nightOwl.plain.color,
       mx: -5,
       px: 5,
-      py: 1,
+      pt: 3,
+      pb: 1,
       mb: -2,
       borderRadius: 'md',
     },
