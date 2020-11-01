@@ -106,7 +106,7 @@ export default {
     },
   },
   hr: {
-    bg: 'muted',
+    bg: 'green.1',
     border: 0,
     height: '1px',
     m: 3,

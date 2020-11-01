@@ -38,22 +38,22 @@ export default {
     container: {
       my: 8,
     },
-    title: {
-      mb: 0,
-      pb: 0,
-      fontSize: 7,
-      lineHeight: 'tight',
-      fontWeight: 'semibold',
-      color: 'grey.8',
-      fontFamily: 'serif',
-    },
-    date: {
-      color: 'grey.5',
-      fontSize: 0,
-    },
     tagline: {
       mt: 2,
       fontSize: 2,
     },
+  },
+  blogTitle: {
+    mb: 0,
+    pb: 0,
+    fontSize: 7,
+    lineHeight: 'tight',
+    fontWeight: 'semibold',
+    color: 'grey.8',
+    fontFamily: 'serif',
+  },
+  blogDate: {
+    color: 'grey.5',
+    fontSize: 0,
   },
 }
