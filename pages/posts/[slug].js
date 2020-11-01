@@ -16,8 +16,10 @@ export default function BlogPost({ source, frontMatter }) {
 
   return (
     <Layout title={frontMatter.title}>
-      <h1>{frontMatter.title}</h1>
-      <div>{content}</div>
+      <div sx={{ mt: 8 }}>
+        <h1>{frontMatter.title}</h1>
+        <div>{content}</div>
+      </div>
     </Layout>
   )
 }
