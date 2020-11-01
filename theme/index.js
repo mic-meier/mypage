@@ -14,6 +14,7 @@ import space from './space'
 import styles from './styles'
 import transforms from './transforms'
 import transitions from './transitions'
+import variants from './variants'
 import zIndices from './zIndices'
 
 export default {
@@ -34,4 +35,5 @@ export default {
   inputs,
   transforms,
   transitions,
+  ...variants,
 }

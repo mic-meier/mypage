@@ -1,3 +1,4 @@
+import Layout from '../components/Layout'
 import { getSortedPostsData } from '../lib/getPostsData'
 
 export const getStaticProps = async () => {
@@ -12,12 +13,14 @@ export const getStaticProps = async () => {
 
 export default function BlogList({ sortedPostsData }) {
   return (
-    <div>
-      {sortedPostsData.map(({ slug, date, title, tagline }) => (
-        <div key={slug}>
-          {slug} {date} {title} {tagline}{' '}
-        </div>
-      ))}
-    </div>
+    <Layout title="blog">
+      <div>
+        {sortedPostsData.map(({ slug, date, title, tagline }) => (
+          <div key={slug}>
+            {slug} {date} {title} {tagline}{' '}
+          </div>
+        ))}
+      </div>
+    </Layout>
   )
 }
