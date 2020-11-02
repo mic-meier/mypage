@@ -1,28 +1,65 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import Link from 'next/link'
-import { jsx } from 'theme-ui'
+import React from 'react'
+import { jsx, MenuButton } from 'theme-ui'
 
 export default function Header() {
+  const [isOpen, setIsOpen] = React.useState(false)
+
   return (
     <header
       sx={{
         variant: 'header',
       }}
     >
-      <Link href="/">
-        <a
-          sx={{
-            variant: 'nav.title',
-          }}
-        >
-          El Mayo
-        </a>
-      </Link>
+      <MenuButton onClick={() => setIsOpen(!isOpen)} />
+      <button
+        sx={{ variant: 'buttons.nav' }}
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <Link href="/">
+          <a
+            sx={{
+              variant: 'nav.title',
+              display: [() => (isOpen ? 'flex' : 'none'), 'flex'],
+            }}
+          >
+            El Mayo
+          </a>
+        </Link>
+      </button>
       <div sx={{ mx: 'auto' }} />
-      <Link href="/blog">
-        <a sx={{ variant: 'nav.link' }}>Blog</a>
-      </Link>
+      <button
+        sx={{ variant: 'buttons.nav' }}
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <Link href="/about">
+          <a
+            sx={{
+              variant: 'nav.link',
+              display: [() => (isOpen ? 'flex' : 'none'), 'flex'],
+            }}
+          >
+            About
+          </a>
+        </Link>
+      </button>
+      <button
+        sx={{ variant: 'buttons.nav' }}
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <Link href="/blog">
+          <a
+            sx={{
+              variant: 'nav.link',
+              display: [() => (isOpen ? 'flex' : 'none'), 'flex'],
+            }}
+          >
+            Blog
+          </a>
+        </Link>
+      </button>
     </header>
   )
 }

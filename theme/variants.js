@@ -16,6 +16,7 @@ export default {
       variant: 'nav.base',
       fontWeight: 'heading',
       fontSize: 4,
+      display: ['none', 'flex'],
     },
     link: {
       variant: 'nav.base',
@@ -25,6 +26,7 @@ export default {
   },
   header: {
     display: 'flex',
+    flexDirection: ['column', 'row'],
     backgroundColor: 'green.7',
     boxShadow: '0 5px 15px hsla(0, 0%, 0%, .2)',
     position: 'sticky',
