@@ -24,8 +24,8 @@ function BlogListItem({ title, date, tagline, slug }) {
       <Link href={`/posts/${slug}`}>
         <a sx={{ variant: 'blogListItem.link' }}>
           <div>
-            <h2 sx={{ variant: 'blogListItem.title' }}>{title}</h2>
-            <div sx={{ variant: 'blogListItem.date' }}>{formattedDate}</div>
+            <h2 sx={{ variant: 'blogTitle' }}>{title}</h2>
+            <div sx={{ variant: 'blogDate' }}>{formattedDate}</div>
             <div sx={{ variant: 'blogListItem.tagline' }}>{tagline}</div>
           </div>
         </a>

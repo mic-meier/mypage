@@ -5,11 +5,12 @@ import hydrate from 'next-mdx-remote/hydrate'
 import renderToString from 'next-mdx-remote/render-to-string'
 import { jsx } from 'theme-ui'
 
+import BlogHeader from '../../components/BlogHeader'
 import Layout from '../../components/Layout'
 import { getPostData } from '../../lib/getPostsData'
 import { getAllPostSlugs } from '../../lib/getPostsData'
 
-const components = {}
+const components = { BlogHeader }
 
 export default function BlogPost({ source, frontMatter }) {
   const content = hydrate(source, { components })
@@ -17,7 +18,6 @@ export default function BlogPost({ source, frontMatter }) {
   return (
     <Layout title={frontMatter.title}>
       <div sx={{ mt: 8 }}>
-        <h1>{frontMatter.title}</h1>
         <div>{content}</div>
       </div>
     </Layout>
