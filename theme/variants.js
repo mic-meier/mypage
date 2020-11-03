@@ -3,12 +3,12 @@ export default {
     base: {
       cursor: 'pointer',
       textDecoration: 'none',
-      color: 'grey.0',
+      color: 'green.4',
       mx: 3,
       py: 3,
       px: 2,
       ':hover, :active': {
-        borderBottom: (theme) => `4px solid ${theme.colors.grey[1]}`,
+        borderBottom: (theme) => `4px solid ${theme.colors.green[4]}`,
         pb: '8px',
       },
     },
@@ -27,8 +27,7 @@ export default {
   header: {
     display: 'flex',
     flexDirection: ['column', 'row'],
-    backgroundColor: 'green.7',
-    boxShadow: '0 5px 15px hsla(0, 0%, 0%, .2)',
+    backgroundColor: 'grey.0',
     position: 'sticky',
     top: 0,
   },
@@ -57,5 +56,9 @@ export default {
   blogDate: {
     color: 'grey.5',
     fontSize: 0,
+  },
+  blogHeader: {
+    mb: 6,
+    borderBottom: (theme) => `1px solid ${theme.colors.green[4]}`,
   },
 }

@@ -116,7 +116,7 @@ export default {
     },
   },
   menu: {
-    color: 'grey.0',
+    color: 'green.4',
     my: 3,
     mx: 3,
     height: '32px',

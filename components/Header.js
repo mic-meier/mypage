@@ -32,7 +32,7 @@ export default function Header() {
       <div sx={{ mx: 'auto' }} />
       <button
         sx={{ variant: 'buttons.nav' }}
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={() => isOpen && setIsOpen(!isOpen)}
       >
         <Link href="/about">
           <a
@@ -47,7 +47,7 @@ export default function Header() {
       </button>
       <button
         sx={{ variant: 'buttons.nav' }}
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={() => isOpen && setIsOpen(!isOpen)}
       >
         <Link href="/blog">
           <a

@@ -9,8 +9,7 @@ function BlogHeader({ title, date }) {
   return (
     <div
       sx={{
-        mb: 6,
-        borderBottom: (theme) => `1px solid ${theme.colors.green[5]}`,
+        variant: 'blogHeader',
       }}
     >
       <h1 sx={{ variant: 'blogTitle' }}>{title}</h1>
