@@ -115,4 +115,18 @@ export default {
       backgroundColor: 'gray.1',
     },
   },
+  menu: {
+    color: 'green.4',
+    my: 3,
+    mx: 3,
+    height: '32px',
+    width: '32px',
+    display: [null, 'none'],
+  },
+  nav: {
+    background: 'transparent',
+    p: 0,
+    m: 0,
+    border: 'none',
+  },
 }
