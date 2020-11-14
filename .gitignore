@@ -32,3 +32,6 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# test blog for dev purposes
+/posts/testblog.mdx
