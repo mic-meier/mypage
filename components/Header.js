@@ -34,21 +34,6 @@ export default function Header() {
         sx={{ variant: 'buttons.nav' }}
         onClick={() => isOpen && setIsOpen(!isOpen)}
       >
-        <Link href="/about">
-          <a
-            sx={{
-              variant: 'nav.link',
-              display: [() => (isOpen ? 'flex' : 'none'), 'flex'],
-            }}
-          >
-            About
-          </a>
-        </Link>
-      </button>
-      <button
-        sx={{ variant: 'buttons.nav' }}
-        onClick={() => isOpen && setIsOpen(!isOpen)}
-      >
         <Link href="/blog">
           <a
             sx={{
