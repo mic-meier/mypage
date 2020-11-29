@@ -6,11 +6,12 @@ import renderToString from 'next-mdx-remote/render-to-string'
 import { jsx } from 'theme-ui'
 
 import BlogHeader from '../../components/BlogHeader'
+import BlogImage from '../../components/BlogImage'
 import Layout from '../../components/Layout'
 import { getPostData } from '../../lib/getPostsData'
 import { getAllPostSlugs } from '../../lib/getPostsData'
 
-const components = { BlogHeader }
+const components = { BlogHeader, BlogImage }
 
 export default function BlogPost({ source, frontMatter }) {
   const content = hydrate(source, { components })
