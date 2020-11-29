@@ -3,7 +3,6 @@ import { ThemeProvider } from 'theme-ui'
 
 import { components } from '../components/mdxcomponents/index'
 import theme from '../theme/index'
-console.log('theme', theme)
 
 MDXContext.displayName = 'MDXReactContext'
 
