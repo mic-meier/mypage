@@ -18,7 +18,7 @@ export default function BlogPost({ source, frontMatter }) {
 
   return (
     <Layout title={frontMatter.title}>
-      <div sx={{ mt: 8 }}>
+      <div sx={{ mt: [2, 8] }}>
         <div>{content}</div>
       </div>
     </Layout>
